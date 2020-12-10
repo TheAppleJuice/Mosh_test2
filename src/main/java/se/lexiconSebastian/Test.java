@@ -10,7 +10,7 @@ public class Test {
 
 
 
-        System.out.println("Hello Java!");
+        System.out.println("Welcome to my calculator");
         Scanner scanner=new Scanner(System.in);
 
         boolean isActive = true;
@@ -27,17 +27,19 @@ public class Test {
             {
                 case "+":
                     int resultSum = addition(number1, number2);
-                    System.out.println(resultSum);
+                    System.out.println("The sum is " + resultSum);
                     break;
                 case "-":
                     int resultSub = subtraction(number1, number2);
-                    System.out.println(resultSub);
+                    System.out.println(" The difference is " + resultSub);
                     break;
                 case "*":
-                    System.out.println("I want to invoke multiplication method");
+                    int resultMult = multiplication (number1, number2);
+                    System.out.println("The product is " + resultMult);
                     break;
                 case "/":
-                    System.out.println("I want to invoke division method");
+                    int resultDiv = division(number1,number2);
+                    System.out.println("The quotient " + resultDiv);
                     break;
                 default :
                     System.out.println("operation type is not valid");
@@ -57,7 +59,6 @@ public class Test {
     }
 
 
-
     public static int addition(int number1,int number2){
         int result = number1 + number2;
         return result;
@@ -65,5 +66,13 @@ public class Test {
     public static int subtraction(int number1, int number2){
         int result = number1-number2;
         return result;
+    }
+    private static int multiplication(int number1, int number2) {
+        int result = number1 * number2;
+        return result;
+    }
+    private static int division(int number1, int number2){
+    int result = number1 / number2;
+    return result;
     }
 }
