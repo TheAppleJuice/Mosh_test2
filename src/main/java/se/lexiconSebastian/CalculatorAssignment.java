@@ -1,6 +1,5 @@
 package se.lexiconSebastian;
 
-import sun.font.TrueTypeFont;
 
 import java.util.Scanner;
 
@@ -11,6 +10,7 @@ public class Test {
 
 
         System.out.println("Welcome to my calculator");
+        System.out.println("What mathematical problem do you want to solve today?");
         Scanner scanner=new Scanner(System.in);
 
         boolean isActive = true;
@@ -18,10 +18,11 @@ public class Test {
 
             System.out.println("Please enter number one");
             int number1 = scanner.nextInt();
+            System.out.println("That´s a good number");
             System.out.println("Please enter number two");
             int number2 = scanner.nextInt();
-
-            System.out.println("Please choose operation type");
+            System.out.println("Excellent  choice");
+            System.out.println("Please choose operation type: +, -, * or / ");
             String operationType= scanner.next();
             switch (operationType)
             {
